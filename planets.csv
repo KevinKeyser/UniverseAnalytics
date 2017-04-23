@@ -1,22 +1,3 @@
-# This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
-# Sun Apr 23 00:52:53 2017
-#
-# CONSTRAINT:  where (st_dist > 0
-# CONSTRAINT:  )
-#
-# COLUMN ra:             RA [sexagesimal]
-# COLUMN dec:            Dec [sexagesimal]
-# COLUMN st_dist:        Distance [pc]
-# COLUMN pl_name:        Planet Name
-# COLUMN pl_rvamp:       Radial Velocity Amplitude [m/s]
-# COLUMN pl_masse:       Planet Mass [Earth mass]
-# COLUMN pl_msinie:      Planet M*sin(i) [Earth mass]
-# COLUMN pl_rade:        Planet Radius [Earth radii]
-# COLUMN pl_rads:        Planet Radius [Solar radii]
-# COLUMN pl_disc:        Year of Discovery
-# COLUMN pl_status:      Status
-# COLUMN pl_mnum:        Number of Moons in System
-#
 rowid,ra,dec,st_dist,pl_name,pl_rvamp,pl_masse,pl_msinie,pl_rade,pl_rads,pl_disc,pl_status,pl_mnum
 3275,217.428955,-62.679485,1.29,Proxima Cen b,1.380,,1.27000,,,2016,3,0
 3455,53.232685,-9.458262,3.21,eps Eri b,18.500,492.63650,247.90740,,,2000,3,0
