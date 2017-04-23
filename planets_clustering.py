@@ -17,4 +17,26 @@ import pandas as pd
 
 planets = pd.read_csv('planets.csv')
 
-print(planets['ra', 'dec', 'st_dist'])]
+print(planets[['ra', 'dec', 'st_dist']])
+
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+
+
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+x = planets['ra']
+y = planets['dec']
+z = planets['st_dist']
+
+
+
+ax.scatter(x, y, z, c='r', marker='o')
+
+ax.set_xlabel('Ra Degrees')
+ax.set_ylabel('Dec Degrees')
+ax.set_zlabel('Distance')
+
+plt.show()
