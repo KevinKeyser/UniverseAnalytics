@@ -32,7 +32,8 @@ public class Universe : MonoBehaviour
             planet.AddComponent<MeshRenderer>().sharedMaterial = Material;
             planet.AddComponent<PlanetInformation>().Information = Planets[i];
             planet.transform.SetParent(transform);
-            planet.transform.position = Planets[i].PcDistance * PolarToCartesian(new Vector2(Planets[i].Declination, Planets[i].RightAscension));
+            planet.transform.position = Planets[i].PcDistance * PolarToCartesian(new Vector2(Planets[i].Declination, Planets[i].RightAscension)) * 5;
+            planet.transform.localScale = Vector3.one * Planets[i].Radius;
         }
     }
 

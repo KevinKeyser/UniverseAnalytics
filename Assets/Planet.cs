@@ -40,7 +40,7 @@ public class Planet {
 
     [SerializeField]
     private string pl_rade;
-    public float Radius { get { return String.IsNullOrEmpty(pl_rade) ? 0 : kmEarthRadii * float.Parse(pl_rade); } } 
+    public float Radius { get { return String.IsNullOrEmpty(pl_rade) ? 0 : float.Parse(pl_rade); } } 
 
     [SerializeField]
     private string ra;
